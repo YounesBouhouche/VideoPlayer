@@ -4,9 +4,8 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.material3.ExperimentalMaterial3Api
-import org.koin.compose.KoinContext
-import org.koin.compose.viewmodel.koinViewModel
 import com.younesbouh.videoplayer.ui.theme.AppTheme
+import org.koin.compose.viewmodel.koinViewModel
 
 class PlayerActivity : ComponentActivity() {
     @OptIn(ExperimentalMaterial3Api::class)

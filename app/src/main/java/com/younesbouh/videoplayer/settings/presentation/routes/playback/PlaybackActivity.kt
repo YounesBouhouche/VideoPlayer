@@ -4,11 +4,10 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.material3.ExperimentalMaterial3Api
-import org.koin.android.ext.android.get
-import org.koin.compose.KoinContext
-import org.koin.compose.viewmodel.koinViewModel
 import com.younesbouh.videoplayer.main.presentation.util.composables.SetSystemBarColors
 import com.younesbouh.videoplayer.ui.theme.AppTheme
+import org.koin.android.ext.android.get
+import org.koin.compose.viewmodel.koinViewModel
 
 class PlaybackActivity : ComponentActivity() {
 
