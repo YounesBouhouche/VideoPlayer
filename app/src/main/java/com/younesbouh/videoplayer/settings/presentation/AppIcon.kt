@@ -8,6 +8,8 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.PlayArrow
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
@@ -54,7 +56,7 @@ fun AppIcon(modifier: Modifier = Modifier) {
             colorFilter = ColorFilter.tint(MaterialTheme.colorScheme.surfaceContainer),
         )
         Icon(
-            ImageVector.vectorResource(R.drawable.media3_notification_small_icon),
+            Icons.Default.PlayArrow,
             null,
             Modifier.fillMaxSize(.5f),
             MaterialTheme.colorScheme.onSurface,

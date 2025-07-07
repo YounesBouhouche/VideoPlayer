@@ -7,10 +7,10 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.FolderOpen
 import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.Language
-import androidx.compose.material.icons.filled.MusicNote
 import androidx.compose.material.icons.filled.Palette
 import androidx.compose.material.icons.filled.PlayCircleFilled
 import androidx.compose.material.icons.filled.Storage
+import androidx.compose.material.icons.filled.VideoLibrary
 import androidx.compose.material3.ColorScheme
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
@@ -18,7 +18,6 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.graphics.Color
 import com.materialkolor.ktx.harmonize
-import org.koin.compose.koinInject
 import com.younesbouh.videoplayer.R
 import com.younesbouh.videoplayer.settings.data.SettingsDataStore
 import com.younesbouh.videoplayer.settings.presentation.routes.about.AboutActivity
@@ -30,6 +29,7 @@ import com.younesbouh.videoplayer.ui.theme.BlueColors
 import com.younesbouh.videoplayer.ui.theme.GreenColors
 import com.younesbouh.videoplayer.ui.theme.PurpleColors
 import com.younesbouh.videoplayer.ui.theme.RedColors
+import org.koin.compose.koinInject
 
 data class Category(
     val name: Int? = null,
@@ -71,7 +71,7 @@ object Settings {
         SettingData(
             headline = R.string.playback,
             supporting = R.string.playback_desc,
-            icon = Icons.Default.MusicNote,
+            icon = Icons.Default.VideoLibrary,
             large = true
         ) {
             it.startActivity<PlaybackActivity>()

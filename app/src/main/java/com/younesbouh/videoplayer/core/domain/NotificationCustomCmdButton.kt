@@ -15,19 +15,17 @@ enum class NotificationCustomCmdButton(
     REWIND(
         customAction = CUSTOM_COMMAND_REWIND_ACTION_ID,
         commandButton =
-            CommandButton.Builder()
+            CommandButton.Builder(R.drawable.baseline_replay_10_24)
                 .setDisplayName("Rewind")
                 .setSessionCommand(SessionCommand(CUSTOM_COMMAND_REWIND_ACTION_ID, Bundle()))
-                .setIconResId(R.drawable.baseline_replay_10_24)
                 .build(),
     ),
     FORWARD(
         customAction = CUSTOM_COMMAND_FORWARD_ACTION_ID,
         commandButton =
-            CommandButton.Builder()
+            CommandButton.Builder(R.drawable.baseline_forward_10_24)
                 .setDisplayName("Forward")
                 .setSessionCommand(SessionCommand(CUSTOM_COMMAND_FORWARD_ACTION_ID, Bundle()))
-                .setIconResId(R.drawable.baseline_forward_10_24)
                 .build(),
     ),
 }

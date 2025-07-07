@@ -184,7 +184,7 @@ class AboutActivity : ComponentActivity() {
                         }
                         item {
                             Text(
-                                "MusicPlayer",
+                                "VideoPlayer",
                                 Modifier.fillMaxWidth(),
                                 style = MaterialTheme.typography.headlineLarge,
                                 textAlign = TextAlign.Center,

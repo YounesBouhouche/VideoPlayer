@@ -7,10 +7,8 @@ import android.os.Build
 import androidx.room.Room
 import com.younesbouh.videoplayer.core.data.PlayerDataStore
 import com.younesbouh.videoplayer.core.data.db.AppDatabase
-import com.younesbouh.videoplayer.main.presentation.viewmodel.MainVM
 import com.younesbouh.videoplayer.settings.data.SettingsDataStore
 import org.koin.android.ext.koin.androidContext
-import org.koin.core.module.dsl.viewModelOf
 import org.koin.dsl.module
 
 val appModule = module {
